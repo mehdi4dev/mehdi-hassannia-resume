@@ -1,7 +1,38 @@
+h2{
+    text-align: center;
+    margin-top: 30px;
+}
+/* ----------------------------------------
+                header
+ ------------------------------------------*/
 .imgheader{
  background-image: url("../img/HEADER2.jpg");
  height: 400px;
- width: 100%;
+ 
  background-size: cover;
  background-position: center;
+}
+.profile{
+    text-align: center;
+    margin-top: 50px;
+}
+.profile .avatar img{
+    border-radius: 50%;
+    width: 200px; 
+    border : 5px solid cyan;
+    
+}
+.profile .info .name{
+    font-size:30px;
+    color: #fff;
+    
+}
+.job-title{
+    color: cyan;
+}
+
+#personal-information h4{
+    text-align: center;
+    padding-top: 10px;
+    
 }
