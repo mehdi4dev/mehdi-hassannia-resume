@@ -42,3 +42,23 @@ h2 .hilight{
     padding-top: 10px;
     
 }
+
+
+.sevice-item-text{
+   text-align: end  ;
+}
+.service-item{
+    
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.service-item div{
+    margin: 5px 10px ;
+ 
+}
+.service-item-icon{
+    font-size: 35px;  
+    background-color: aqua
+}
