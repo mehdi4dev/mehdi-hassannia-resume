@@ -1,6 +1,12 @@
 h2{
     text-align: center;
     margin-top: 30px;
+    
+}
+h2 .hilight{
+    border:1px solid aqua;
+    background-color: aqua;
+    border-radius: 0 50%;
 }
 /* ----------------------------------------
                 header
@@ -35,4 +41,24 @@ h2{
     text-align: center;
     padding-top: 10px;
     
+}
+
+
+.sevice-item-text{
+   text-align: end  ;
+}
+.service-item{
+    
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.service-item div{
+    margin: 5px 10px ;
+ 
+}
+.service-item-icon{
+    font-size: 35px;  
+    background-color: aqua
 }
