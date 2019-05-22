@@ -1,6 +1,6 @@
 h2{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 60px;
     
 }
 h2 .hilight{
@@ -37,12 +37,22 @@ h2 .hilight{
     color: cyan;
 }
 
+
+/* ----------------------------------------
+                personal information
+ ------------------------------------------*/
+
+
+
 #personal-information h4{
     text-align: center;
     padding-top: 10px;
     
 }
-
+#personal-information p{
+    text-align: end;    
+    margin-top: 30px;
+}
 
 .sevice-item-text{
    text-align: end  ;
@@ -60,5 +70,33 @@ h2 .hilight{
 }
 .service-item-icon{
     font-size: 35px;  
-    background-color: aqua
+    
+}
+/* ----------------------------------------
+                education
+ ------------------------------------------*/
+ .education-degree-info {
+     text-align: end;
+     width: 1140px;
+     padding-right: 40px;
+ }
+ .education-degree-info div{
+     margin-top: 10px;
+ }
+ .bold{
+     padding-left:30px; 
+     color: black;
+     font-size: 20px;
+     font-weight: 700;
+ }
+ .education-year,.score{
+     color: cyan;
+     font-weight: 700
+ }
+
+
+ .job-info {
+    text-align: end;
+    width: 1140px;
+    padding-right: 40px;
 }
