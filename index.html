@@ -7,6 +7,9 @@
     <title>Resume</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="src/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="src/css/animate.css">
     <link rel="stylesheet" href="src/css/resume.css">
 </head>
 <body>
@@ -28,8 +31,8 @@
     </div>
    
 </header>
-<section id="personal-information">
-    <h2><span class="hilight">&nbsp;اطلاعات شخصی&nbsp;</span></h2>
+<section id="personal-information" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+    <h2><span class="hilight">اطلاعات شخصی</span></h2>
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
@@ -85,11 +88,13 @@
         </div>
     </div>
 </section>
-<section id="education-records">
-    <h2><span class="hilight">&nbsp;سوابق تحصیلی&nbsp;</span></h2>
+<section id="education-records" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+    <h2><span class="hilight">سوابق تحصیلی</span></h2>
+    
     <div class="container">
         <div class="row justify-content-end">
-            <h4>کارشناسی</h4>
+            <h4 class="point">کارشناسی</h4>
+            <div class="circle"></div>
             <div class="education-degree-info">
                 <div class="orientation"> <span class="bold">گرایش : </span> مهندسی نرم افزار</div>
                 <div class="university"><span class="bold">موسسه/دانشگاه : </span>علوم وفنون مازندران</div>
@@ -99,11 +104,12 @@
         </div>
     </div>
 </section>
-<section id="job-records">
-        <h2><span class="hilight">&nbsp;سوابق ضغلی&nbsp;</span></h2>
+<section id="job-records" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+        <h2><span class="hilight">سوابق شغلی</span></h2>
         <div class="container">
             <div class="row justify-content-end">
-                <h4>کارمند فناوری اطلاعات</h4>
+                <h4 class="point">کارمند فناوری اطلاعات</h4>
+                <div class="circle"></div>
                 <div class="job-info">
                     <div class="company"> <span class="bold">شرکت : </span> اورست مدرن پارس</div>
                     <div class="university"><span class="bold">دوره همکاری : </span>از بهمن 95</div>
@@ -112,6 +118,123 @@
             </div>
         </div>
 </section>
+<section id="Certificate" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+    <h2><span class="hilight">دوره ها و گواهی نامه</span></h2>
+    <div class="container">
+        <div class="row justify-content-end">
+                <h4 class="point"> CCNA R & S</h4>
+            <div class="circle"></div>
+            
+            <div class="certificate-info">
+                <div class="company"> <span class="bold">موسسه : </span> کاریار ارقام</div>
+            </div>
+            
+            <h4 class="point">CCNP R & S</h4>
+            <div class="circle"></div>
+            <div class="certificate-info">
+                <div class="company"> <span class="bold">موسسه : </span> کاریار ارقام</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="language" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+    <h2><span class="hilight">زبان خارجه</span></h2>
+    <div class="container">
+        <div class="row">
+                <h2 >انگلیسی</h4>
+                <div id="reading" class="language-content"> 
+                    <h3>مهارت خواندن</h3>
+                    <img src="src/img/60.jpg" alt="">
+                </div>
+                <div id="speaking" class="language-content">
+                    <h3>مهارت صحبت کردن</h3>
+                    <img src="src/img/60.jpg" alt="">
+                </div>
+                <div id="writing" class="language-content">
+                    <h3>مهارت نوشتن</h3>
+                    <img src="src/img/60.jpg" alt="">
+                </div>
+                <div id="listening" class="language-content">
+                    <h3>مهارت گوش دادن</h3>
+                    <img src="src/img/60.jpg" alt="">
+                </div>
+
+                
+                <button id="default-open" class="language-link" onclick="openAbility('reading',this,'blue')">مهارت خواندن</button>
+                <button id="default-open" class="language-link" onclick="openAbility('speaking',this,'red')">مهارت صحبت کردن</button>
+                <button id="default-open" class="language-link" onclick="openAbility('writing',this,'yellow')">مهارت نوشتن</button>
+                <button id="default-open" class="language-link" onclick="openAbility('listening',this,'green')">مهارت گوش دادن</button>
+
+        </div>
+    </div>
+</section>
+<section id="abilities" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+        <h2><span class="hilight">مهارت ها</span></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                       
+                    <div id="ability" class="owl-carousel owl-theme">
+                            
+                        <div class="ability-info item">
+                            <div class="ability-title">html</div>
+                            <img src="src/img/60.jpg" alt="">
+                        </div>
+                        <div class="ability-info item">
+                            <div class="ability-title">css</div>
+                            <img src="src/img/60.jpg" alt="">
+                        </div>
+                        <div class="ability-info item">
+                            <div class="ability-title">react</div>
+                            <img src="src/img/60.jpg" alt="">
+                        </div>
+                        <div class="ability-info item">
+                            <div class="ability-title">redux</div>
+                            <img src="src/img/60.jpg" alt="" >
+                        </div>
+                        <div class="ability-info item">
+                            <div class="ability-title">git</div>
+                            <img src="src/img/60.jpg" alt="">
+                        </div>
+                        <div class="ability-info item">
+                            <div class="ability-title">gulp</div>
+                            <img src="src/img/60.jpg" alt="">
+                        </div>
+                        <div class="ability-info item">
+                            <div class="ability-title">icdl</div>
+                            <img src="src/img/60.jpg" alt="">
+                        </div>
+                        <div class="ability-info item">
+                            <div class="ability-title">bootstrap</div>
+                            <img src="src/img/60.jpg" alt="">
+                        </div>
+                        <div class="ability-info item">
+                            <div class="ability-title">responsive design</div>
+                            <img src="src/img/60.jpg" alt="">
+                        </div>
+                        <div class="ability-info item">
+                            <div class="ability-title">restful api</div>
+                            <img src="src/img/60.jpg" alt="">
+                        </div>
+                        <div class="ability-info item">
+                            <div class="ability-title">UI/Ux designer</div>
+                            <img src="src/img/60.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+</section>
+<footer>
+    
+</footer>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="src/script/owl.carousel.min.js"></script>
+  
+    <script src="src/script/script.js"></script>
 </body>
 </html>
