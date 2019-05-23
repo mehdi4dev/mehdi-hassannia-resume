@@ -1,13 +1,20 @@
+
 h2{
     text-align: center;
-    margin-top: 60px;
+    margin: 60px 0;
+    width: 100%;
+    
     
 }
 h2 .hilight{
-    border:1px solid aqua;
-    background-color: aqua;
-    border-radius: 0 50%;
+        border:1px solid black;
+        border-block-end-width: thick;
+        background-color: cyan  ;
+        border-radius: 0 50%;
+        width: 40%;
+        display: inline-block;
 }
+
 /* ----------------------------------------
                 header
  ------------------------------------------*/
@@ -94,9 +101,74 @@ h2 .hilight{
      font-weight: 700
  }
 
-
+/* ----------------------------------------
+                job records
+ ------------------------------------------*/
  .job-info {
     text-align: end;
     width: 1140px;
     padding-right: 40px;
+}
+/* ----------------------------------------
+                certificate
+ ------------------------------------------*/
+.certificate-info {
+    text-align: end;
+    width: 1140px;
+    padding-right: 40px;
+    margin-bottom:40px; 
+}
+/* ----------------------------------------
+                language
+ ------------------------------------------*/
+ .language-content{
+     
+     display: none;
+     padding: 50px;
+     text-align: center;
+     width: 100%;
+ }
+ .language-link{
+     width: 25%;
+     background-color: #444;
+     float: left;
+     border: none;
+     cursor: pointer;
+     padding: 14px 20px;
+     font-size: 17px;
+ }
+ .language-link:hover{
+     background-color: #aaa;
+ }
+ #reading{color: blue;}
+ #speaking{color: red;}
+ #writing{color: yellow;}
+ #listening{color: green;}
+ /* ----------------------------------------
+                ability
+ ------------------------------------------*/
+.ability-info{
+    margin: 0 15px;
+}
+.ability-title{
+    text-align: center;
+    
+    font-size: 1vmax;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    
+    
+}
+
+
+.circle{
+    align-self: center;
+    height: 15px;
+    width: 15px;
+    background-color: cyan;
+    border-radius: 50%;
+    margin-left: 10px;
+  
+    
 }
