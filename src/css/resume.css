@@ -1,10 +1,12 @@
 
 h2{
     text-align: center;
-    margin: 60px 0;
+   
     width: 100%;
     
-    
+}
+h2.header{
+    margin: 80px 0;
 }
 h2 .hilight{
         border:1px solid black;
@@ -14,13 +16,22 @@ h2 .hilight{
         width: 40%;
         display: inline-block;
 }
-
+.circle{
+    align-self: center;
+    height: 15px;
+    width: 15px;
+    background-color: cyan;
+    border-radius: 50%;
+    margin-left: 10px;
+  
+    
+}
 /* ----------------------------------------
                 header
  ------------------------------------------*/
 .imgheader{
  background-image: url("../img/HEADER2.jpg");
- height: 400px;
+ height: 500px;
  
  background-size: cover;
  background-position: center;
@@ -124,7 +135,7 @@ h2 .hilight{
  .language-content{
      
      display: none;
-     padding: 50px;
+     padding: 5px;
      text-align: center;
      width: 100%;
  }
@@ -160,15 +171,60 @@ h2 .hilight{
     
     
 }
+/* ----------------------------------------
+                footer
+ ------------------------------------------*/
 
-
-.circle{
-    align-self: center;
-    height: 15px;
-    width: 15px;
-    background-color: cyan;
-    border-radius: 50%;
-    margin-left: 10px;
-  
-    
+footer{
+    background-color: #444;
+    margin-top: 100px;
 }
+.social-links{
+    list-style: none;
+    text-align: center;
+}
+.social-links li{
+    display: inline-block;
+    margin: 20px;
+    
+    font-size: 35px;
+}
+footer .about{
+    
+    list-style: none;
+    
+    text-align: center;
+}
+footer .about li{
+    display: inline-block;
+    margin: 30px;
+    font-size: 25px
+}
+
+/* ----------------------------------------
+                navbar
+ ------------------------------------------*/
+
+
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 25px;
+}   
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}   
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid cyan;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;  
+}
+
